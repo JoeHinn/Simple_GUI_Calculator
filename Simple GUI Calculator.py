@@ -17,21 +17,11 @@ def press(value):
     entrynumber.insert(END, value)
 
 def cal():
-    """global tempnum
+    global tempnum
     addval = str(eval(tempnum))
     clear()
     tempnum = ""
-    press(addval)"""
-    global tempnum
-    try:
-        
-        addval = str(eval(tempnum))
-        clear()
-        tempnum = ""
-        press(addval)
-    except:
-        addval = "Error try some other expressions"
-        tempnum = ""  
+    press(addval)
         
 
   
