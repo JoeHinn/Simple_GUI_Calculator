@@ -3,11 +3,11 @@ from tkinter.constants import CENTER, END
 calnumbers = StringVar
 tempnum = ""
 ui = Tk()
-ui.geometry("262x300")
+ui.geometry("262x296")
 ui.title("Calculator")
 entrynumber = Entry(ui,textvariable= calnumbers,background="#0e153a",fg="#e2f3f5",width=43)
-entrynumber.place(x=0,y=0,height=40)
-entrynumber.pack()
+entrynumber.place(height=20,x=0,y=0)                                                                                     
+entrynumber.pack(ipady=11)
 def press(value):
     """global tempnum
     tempnum = tempnum + str(value)
@@ -23,8 +23,6 @@ def cal():
     tempnum = ""
     press(addval)
         
-
-  
 def clear():
     entrynumber.delete(0,END)
 #Row 1
