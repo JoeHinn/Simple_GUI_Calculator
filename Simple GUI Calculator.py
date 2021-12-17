@@ -24,7 +24,9 @@ def cal():
     press(addval)
         
 def clear():
+    global tempnum
     entrynumber.delete(0,END)
+    tempnum = ""
 #Row 1
 b1 = Button(ui,text="7",command=lambda: press("7"),padx=25,pady=20,background="#22d1ee").place(x=0,y=41)
 b2 = Button(ui,text="8",command=lambda: press("8"),padx=25,pady=20,background="#22d1ee").place(x=65,y=41)
